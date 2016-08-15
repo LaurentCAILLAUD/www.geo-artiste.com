@@ -1,0 +1,334 @@
+@font-face {
+    font-family: 'latoLight';
+    src: url('../fonts/lato-light-webfont.eot');
+    src: url('../fonts/lato-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/lato-light-webfont.woff') format('woff'),
+    url('../fonts/lato-light-webfont.ttf') format('truetype'),
+    url('../fonts/lato-light-webfont.svg#latolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'latoHeavy';
+    src: url('../fonts/lato-heavy-webfont.eot');
+    src: url('../fonts/lato-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/lato-heavy-webfont.woff') format('woff'),
+    url('../fonts/lato-heavy-webfont.ttf') format('truetype'),
+    url('../fonts/lato-heavy-webfont.svg#latoheavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'latoRegular';
+    src: url('../fonts/lato-regular-webfont.eot');
+    src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/lato-regular-webfont.woff') format('woff'),
+    url('../fonts/lato-regular-webfont.ttf') format('truetype'),
+    url('../fonts/lato-regular-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@-webkit-keyframes slider {
+    0% {left: 0
+    }
+    17.14285% {left: 0
+    }
+    20% {left: -100%}
+    37.14285% {left: -100%}
+    40% {left: -200%}
+    57.14284% {left: -200%}
+    60% {left: -300%}
+    77.14285% {left: -300%}
+    80% {left: -400%}
+    97.14285% {left: -400%}
+    100% {left: 0
+    }
+}
+
+@-moz-keyframes slider {
+    0% {left: 0
+    }
+    17.14285% {left: 0
+    }
+    20% {left: -100%}
+    37.14285% {left: -100%}
+    40% {left: -200%}
+    57.14284% {left: -200%}
+    60% {left: -300%}
+    77.14285% {left: -300%}
+    80% {left: -400%}
+    97.14285% {left: -400%}
+    100% {left: 0
+    }
+}
+
+@keyframes slider {
+    0% {left: 0
+    }
+    17.14285% {left: 0
+    }
+    20% {left: -100%}
+    37.14285% {left: -100%}
+    40% {left: -200%}
+    57.14284% {left: -200%}
+    60% {left: -300%}
+    77.14285% {left: -300%}
+    80% {left: -400%}
+    97.14285% {left: -400%}
+    100% {left: 0
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: latoLight, serif;
+    font-size: 18px;
+    background: url("../files/pictures/bodyBackground.jpg") no-repeat fixed;
+    background-size: cover;
+}
+
+#mainWrapper {
+    width: 1024px;
+    margin: 10px auto;
+}
+
+#mainHeader {
+    position: relative;
+    width: 1024px;
+    background-color: rgba(255,255,255,0.8);
+    white-space: normal;
+    font-size: 0;
+}
+
+#mainHeader img {
+    width: 280px;
+    height: 274px;
+    margin: 10px 0 10px 10px;
+}
+
+#mainNav {
+    position: absolute;
+    top: 237.5px;
+    left: 129px
+}
+
+#mainMenu li {
+    padding: 0 15px;
+    list-style: none;
+    text-align: center;
+    font-family: latoRegular, serif;
+    font-size: 28px;
+}
+
+#mainMenu li a {
+    text-decoration: none;
+    color: black;
+}
+
+#mainMenu li a:hover {
+    color: #840C19;
+}
+
+#mainContent {
+    margin-top: 10px;
+}
+
+#sliderContainer {
+    width: 100%;
+    height: 576px;
+    overflow: hidden;
+}
+
+#sliderContent {
+    position: relative;
+    width: 500%;
+    height: 100%;
+    -webkit-animation: 30s slider infinite;
+    -moz-animation: 30s slider infinite;
+    animation: 30s slider infinite;
+}
+
+#sliderContent img {
+    width: 20%;
+    float: left;
+}
+
+#news {
+    width: 487px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 0 10px;
+}
+
+#news h1, #lastCompositionsContainer h1 {
+    font-family: latoHeavy, serif;
+    font-size: 22px;
+    color: #840C19;
+    line-height: 31px;
+    padding: 9.5px 0;
+    text-align: center;
+}
+
+#newsFeed {
+    height: 240px;
+    margin: 10px 0;
+    overflow: scroll;
+}
+
+#news article {
+    font-size: 14px;
+    height: 80px;
+    line-height: 80px;
+}
+
+#news article p {
+    line-height: normal;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: justify;
+}
+
+#lastCompositionsContainer  {
+    width: 507px;
+    background-color: rgba(255,255,255,0.8);
+    margin-top: 10px;
+}
+
+#lastCompositionsContainer article {
+    margin-bottom: 10px;
+}
+
+#lastCompositionsContent {
+    height: 260px;
+    overflow: scroll;
+}
+
+#lastCompositionsContent article {
+    position: relative;
+}
+
+#lastCompositionsContent article img {
+    width: 76.66666px;
+    margin: 0 10px;
+}
+
+#lastCompositionsContent article p {
+    width: 410.33334px;
+    line-height: 24px;
+    text-align: center;
+}
+
+#lastCompositionsContent article .buttonPlay,  #lastCompositionsContent article .buttonPause {
+    position: absolute;
+    width: 15px;
+    top: 53px;
+    left: 280px;
+    white-space: nowrap;
+    font-size: 0;
+    cursor: pointer;
+}
+
+#lastCompositionsContent article .buttonStop {
+    position: absolute;
+    width: 15px;
+    top: 53px;
+    left: 305px;
+    white-space: nowrap;
+    font-size: 0;
+    cursor: pointer;
+}
+
+#lastCompositionsContent article .buttonPause {
+    display: none;
+}
+
+#lastCompositionsContent article .buttonPlay img,  #lastCompositionsContent article .buttonPause img, #lastCompositionsContent article .buttonStop img {
+    width: 100%;
+    margin: 0;
+}
+
+#mainFooter {
+    width: 1024px;
+    margin: 10px auto;
+    background-color: rgba(255,255,255,0.8);
+}
+
+#contactInformations {
+    margin: 9px 0 9px 9px;
+}
+
+#contactInformations, #variousInformations, #realizationInformations {
+    width: 334.66666px;
+}
+
+#variousInformations figure {
+    width:34px;
+    height: 25px;
+    margin: 6px  auto 0 auto;
+}
+
+#variousInformations figure img {
+    width: 100%;
+    height: 100%;
+}
+
+#variousInformations a {
+    text-decoration: none;
+    color: #840C19;
+}
+
+#contactInformations p, #variousInformations p, #realizationInformations p {
+    font-size: 14px;
+}
+
+#variousInformations p {
+    text-align: center;
+}
+
+#variousInformations p:last-child {
+    margin-bottom: 6px;
+}
+
+#realizationInformations {
+    margin: 28px 0;
+}
+
+#realizationInformations p {
+    text-align: right;
+}
+
+#realizationInformations a {
+    text-decoration: none;
+    color: black;
+}
+
+.red {
+    color: #840C19;
+    font-family: latoRegular, serif;
+}
+
+.copyright {
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+}
+
+.positionningLeft {
+    float: left;
+}
+
+.positionningRight {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
